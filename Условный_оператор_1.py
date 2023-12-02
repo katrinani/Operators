@@ -7,8 +7,5 @@
 x = float(input('Введите значение x : '))
 
 # считаем f и выводим на экран
-if x >= 0:
-    f = x ** (1/2) + x ** 2
-else:
-    f = 1 / x
+f = x ** (1/2) + x ** 2 if x >= 0 else 1 / x
 print('f =', round(f, 2))
